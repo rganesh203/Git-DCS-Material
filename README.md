@@ -34,8 +34,8 @@ Distributed VSC: In a distributed system, there is no centralized file storage. 
 Git for Data Science Projects
 Git provides version control for scripts, metrics, data, and models. By using Git extension git-lfs, you can store and version a large database and machine learning models. In a typical data science project, you have a Jupyter notebook, dataset, model, metadata, and model metrics. The metadata includes files containing meta-information about the machine learning model, features, model parameters, and automation files. All of these are necessary for monitoring the progress of AI applications and resolving issues. 
 
-Track data science experiments help scientists revert accidental changes, select the best experiment based on the performance metric, and collaborate with other teammates. The diagram below shows how changes to data or code affect the metadata and output of the model. Tracking these changes can also help other teammates come up with a better solution. Learn all about Git in the latest blog from Summer Worsley.
-![image](https://github.com/user-attachments/assets/74e11e69-c85f-441b-9d05-da525ce750d6)
+Track data engineering experiments help engineer revert accidental changes, select the best experiment based on the performance metric, and collaborate with other teammates. The diagram below shows how changes to data or code affect the metadata and output of the model. Tracking these changes can also help other teammates come up with a better solution. Learn all about Git in the latest blog from Summer Worsley.
+![image](https://github.com/user-attachments/assets/fdbe83ce-de3f-4658-ac50-a390f268c078)
 
 Collaboration with GitHub
 GitHub is a cloud software development platform. It is commonly used for saving files, tracking changes, and collaborating on development projects. In recent years, GitHub has become the most popular social platform for software development communities. Individuals can contribute to open-source projects and bug reports, discuss new projects and discover new tools. 
