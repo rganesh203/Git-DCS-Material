@@ -102,7 +102,8 @@ For more in-depth information on how to install Git, click here.
 
 Initializing the Project
 If you have a GitHub account, click on the + button and select a new repository. After that, type the repository name and add a simple description. It will create an empty public repository. 
-![image](https://github.com/user-attachments/assets/36150135-5c7c-4002-b822-bedb417d2be7)
+![image](https://github.com/user-attachments/assets/25414fa7-79b2-417c-9364-18fb2f570a44)
+
 
 Creating project
 
