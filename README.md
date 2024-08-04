@@ -2,23 +2,27 @@
 GitHub and Git Tutorial for zero to pro.
 A beginner's tutorial demonstrating how Git version control works and why it is crucial for data science projects.
 
-https://images.datacamp.com/image/upload/v1651047046/image8_0e61d0dad8.png
+![image](https://github.com/user-attachments/assets/50796590-6f38-4f18-b2fa-4f76f65c7660)
+
 
 What is Git?
 Git is a distributed, open-source version control system. It enables developers and data scientists to track code, merge changes and revert to older versions - AWS. It allows you to sync changes with a remote server. Due to its flexibility and popularity, Git has become an industry standard as it supports almost all development environments, command-line tools, and operating systems. 
 
 How does Git work?
 Git stores your files and their development history in a local repository. Whenever you save changes you have made, Git creates a commit. A commit is a snapshot of current files. These commits are linked with each other, forming a development history graph, as shown below. It allows us to revert back to the previous commit, compare changes, and view the progress of the development project - Azure DevOps. The commits are identified by a unique hash which is used to compare and revert the changes made.  
+![image](https://github.com/user-attachments/assets/436c4b0f-48df-4475-baa5-e0103834ac98)
 
 A graph of the development history
 
 Branches
 The branches are copies of the source code that works parallel to the main version. To save the changes made, merge the branch into the main version. This feature promotes conflict-free teamwork. Each developer has his/her task, and by using branches, they can work on the new feature without the interference of other teammates. Once the task is finished, you can merge new features with the main version (master branch). If you want to learn how to clone a branch, check out this tutorial on Git Clone Branch.
+![image](https://github.com/user-attachments/assets/ec0e6703-e51f-4214-ba60-a2dc86d90cc1)
 
 Adding new feature to repository
 
 Commits
 There are three states of files in Git: modified, staged, and commit. When you make changes in a file, the changes are saved in the local directory. They are not part of the Git development history. To create a commit, you need to first stage changed files. You can add or remove changes in the staging area and then package these changes as a commit with a message describing the changes.  
+![image](https://github.com/user-attachments/assets/d30bf9db-3674-42cc-b529-7d997391a48c)
 
 Three states of files in Git
 
@@ -31,23 +35,12 @@ Git for Data Science Projects
 Git provides version control for scripts, metrics, data, and models. By using Git extension git-lfs, you can store and version a large database and machine learning models. In a typical data science project, you have a Jupyter notebook, dataset, model, metadata, and model metrics. The metadata includes files containing meta-information about the machine learning model, features, model parameters, and automation files. All of these are necessary for monitoring the progress of AI applications and resolving issues. 
 
 Track data science experiments help scientists revert accidental changes, select the best experiment based on the performance metric, and collaborate with other teammates. The diagram below shows how changes to data or code affect the metadata and output of the model. Tracking these changes can also help other teammates come up with a better solution. Learn all about Git in the latest blog from Summer Worsley.
+![image](https://github.com/user-attachments/assets/74e11e69-c85f-441b-9d05-da525ce750d6)
 
 Collaboration with GitHub
 GitHub is a cloud software development platform. It is commonly used for saving files, tracking changes, and collaborating on development projects. In recent years, GitHub has become the most popular social platform for software development communities. Individuals can contribute to open-source projects and bug reports, discuss new projects and discover new tools. 
 
-Data scientists and machine learning engineers are following the path of software developers and integrating the workflow with GitHub. By doing this, they can share their research work, allow community contribution, and collaborate with data teams. You can find all kinds of data science and machine learning projects, guides, tutorials, and resources on this platform. For students, the platform has become an opportunity to gain work experience and eventually land a job in a prestigious company. 
-
-Portfolio
-Most technical recruiters will ask for the portfolio projects or GitHub profile. This helps them determine whether a candidate is a good fit for their company. It is highly recommended to create a GitHub profile and update it regularly. Hiring managers are always on the lookout for candidates that are highly experienced in software development and contribute to open-source projects. Being able to analyze the GitHub portfolio helps them prepare questions for technical interview sessions. 
-
-GitHub Profile
-
-GitHub enables data scientists to showcase their projects, and it can also count as work experiences on your resume. Showcasing portfolio projects also creates opportunities to work together, launch a startup, and research work. 
-
-Portfolio Projects
-
-Features
-GitHub also provides various other features that are as important as showcasing a portfolio. It is necessary to learn about each feature so that you can incorporate them into your data science projects. 
+Data engineers are following the path of software developers and integrating the workflow with GitHub. By doing this, they can share their research work, allow community contribution, and collaborate with data teams. You can find all kinds of data science and machine learning projects, guides, tutorials, and resources on this platform. For students, the platform has become an opportunity to gain work experience and eventually land a job in a prestigious company. 
 
 Open-source: GitHub provides a complete ecosystem for open-source projects. You can sponsor maintainers, contribute to a project, use the open-source tool in your existing project, and promote your work. 
 Community Collaboration: GitHub has become a community platform where issues, feature requests, code, and documentation contributions can be discussed. 
@@ -78,6 +71,7 @@ git pull merge commits to a local directory from a remote repository.
 git merge <branch-name>: after resolving merge conflicts the command blends selected branch into the current branch.
 git log show a detailed list of commits for the current branch.
 Complete Development with GitHub
+![image](https://github.com/user-attachments/assets/127a5b5f-c375-425e-8627-303aa3d056e0)
 
 If you are interested in learning more commands, check out the Git cheat sheet by Gitlab. 
 
@@ -109,10 +103,12 @@ For more in-depth information on how to install Git, click here.
 
 Initializing the Project
 If you have a GitHub account, click on the + button and select a new repository. After that, type the repository name and add a simple description. It will create an empty public repository. 
+![image](https://github.com/user-attachments/assets/36150135-5c7c-4002-b822-bedb417d2be7)
 
 Creating project
 
 There are many ways to clone remote repositories to the local directory, and GitHub provides a detailed guide on how to clone, add remote, and initialize a Git project.  
+![image](https://github.com/user-attachments/assets/3b0f24cb-0b20-4eb7-8d73-a76a4a46f699)
 
 GitHub Clone
 
