@@ -95,7 +95,6 @@ Installing Git on Windows is hassle-free. Just go to the download page, click on
 
 After installing Git, make sure you have configured the user name and email. This information is used to sign the commits. 
 
-
 git config --global user.name "your-user-name"
 git config --global user.email "your@email.com"
 
@@ -114,7 +113,6 @@ GitHub Clone
 
 We can simply clone the repository by providing an HTTPS link. Make sure you are in the working directory using the command prompt or PowerShell. 
 
-
 git clone https://github.com/kingabzpro/DataCamp-Git.git
 
 >>> Cloning into 'DataCamp-Git'...
@@ -122,11 +120,9 @@ git clone https://github.com/kingabzpro/DataCamp-Git.git
 
 cd .\DataCamp-Git\
 
-Powered By 
 OR
 
 Create a new directory called “DataCamp-Git” and initialize Git using a simple command. After that, add a connection to the remote repository so that you can sync your work with GitHub.
-
 
 mkdir DataCamp-Git
 cd .\DataCamp-Git
@@ -136,7 +132,6 @@ git init
 
 git remote add origin https://github.com/kingabzpro/DataCamp-Git.git
 
-Powered By 
 OR
 
 If you already have a project in a directory, just initialize Git using `git init` and add GitHub remote, as shown above. 
@@ -146,13 +141,10 @@ Before we add files to our repository, make sure you are in the correct local di
 
 We will start simple and create a README file with the heading DataCamp-Git. Then, we will add it to the staging area by using `git add`. 
 
-
 echo "# DataCamp-Git" >> README.md
 git add README.md
 
-
 Git status shows that we are on the main branch and the `README.md` file is staged and ready to be committed.  
-
 
 git status
 
@@ -162,16 +154,13 @@ git status
   (use "git rm --cached <file>..." to unstage)
         new file:   README.md
 
-
 To create our first commit, we will use `git commit` with a message. As we can observe, the first commit is added under the ed9c886 hash.
-
 
 git commit -m "first commit"
 
 >>> [main (root-commit) ed9c886] first commit
 >>> 1 file changed, 1 insertion(+)
 >>> create mode 100644 README.md
-
 
 Adding Project Files
 We will use the DataCamp workspace MasterCard Stock Price with LSTM and GRU and download files. The author of the project has preprocessed the data and training time series data on the LSTM and GRU models. Learn more about the project by reading Recurrent Neural Network Tutorial (RNN).
@@ -188,20 +177,16 @@ Git Data Folder
 
 We will now stage all the files. You can add any directory, file, or data after the initial command. 
 
-
 git add .\data .\model LSTM_GRU.ipynb RNN.png
 
 OR
 
 If you want to add all files to the staging area, then use dot. 
 
-
 git add .
 
-Powered By 
 Commit and Push
 We will commit all the changes with a simple message, and the output shows all the new files in create mode. 
-
 
 git commit -m "project files added"
 
@@ -221,7 +206,6 @@ create mode 100644 model/LSTM/variables/variables.index
 Syncing with GitHub remote repository requires a remote name and branch name `git push <remote-name> <branch-name>`. If you have only one remote and one branch, then using `git push` will work.  
 
 After `git push`, the pop-up window will ask for the credentials, just add your GitHub username or password. You can also generate Personal access tokens and add them instead of the password. Learn more by reading the Git Push and Pull Tutorial.
-
 
 git push
 
@@ -249,24 +233,16 @@ git checkout -b readme
 
 Let’s edit the README file by adding a description to the project and link the RNN DataCamp workspace and tutorial. After that, we will stage changes and save a snapshot of changes with a message.
 
-
 git add README.md
 git commit -m "project description and links to blog"
 
 >>> [readme f3b8b9b] project description and links to blog
 >>>  1 file changed, 8 insertions(+)
 
-Powered By 
 The remote repository doesn't have a readme branch. To create a new branch and push changes, we will use “readme:readme”. The output of the command shows that new branches have been created and both local and remote `readme` branches are synced. 
 
 
 git push origin readme:readme
->>> remote: Resolving deltas: 100% (1/1), completed with 1 local object.
->>> remote: Create a pull request for 'readme' on GitHub by visiting:
->>> remote:  https://github.com/kingabzpro/DataCamp-Git/pull/new/readme
->>> remote:
-To https://github.com/kingabzpro/DataCamp-Git.git
->>>  * [new branch]      readme -> readme
 
 You can observe that we have successfully pushed the local branch to GitHub with a modified version of README.md file. 
 
