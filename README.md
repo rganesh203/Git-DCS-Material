@@ -113,25 +113,24 @@ GitHub Clone
 
 We can simply clone the repository by providing an HTTPS link. Make sure you are in the working directory using the command prompt or PowerShell. 
 
-git clone https://github.com/kingabzpro/DataCamp-Git.git
+git clone https://github.com/rganesh203/MS-SQL-SERVER-Material
 
->>> Cloning into 'DataCamp-Git'...
+>>> Cloning into 'MS-SQL-SERVER-Material'...
 >>> warning: You appear to have cloned an empty repository.
 
-cd .\DataCamp-Git\
+cd .\MS-SQL-SERVER-Material\
 
 OR
 
 Create a new directory called “DataCamp-Git” and initialize Git using a simple command. After that, add a connection to the remote repository so that you can sync your work with GitHub.
 
-mkdir DataCamp-Git
-cd .\DataCamp-Git
+mkdir MS-SQL-SERVER-Materialt
+cd .\MS-SQL-SERVER-Material
 git init
 
->>> Initialized empty Git repository in C:/Repository/GitHub/DataCamp-Git/.git/
+>>> Initialized empty Git repository in C:/Repository/GitHub/MS-SQL-SERVER-Material/.git/
 
-git remote add origin https://github.com/kingabzpro/DataCamp-Git.git
-
+git remote add origin https://github.com/rganesh203/MS-SQL-SERVER-Material
 OR
 
 If you already have a project in a directory, just initialize Git using `git init` and add GitHub remote, as shown above. 
@@ -141,7 +140,7 @@ Before we add files to our repository, make sure you are in the correct local di
 
 We will start simple and create a README file with the heading DataCamp-Git. Then, we will add it to the staging area by using `git add`. 
 
-echo "# DataCamp-Git" >> README.md
+echo "# MS-SQL-SERVER-Material" >> README.md
 git add README.md
 
 Git status shows that we are on the main branch and the `README.md` file is staged and ready to be committed.  
@@ -162,116 +161,13 @@ git commit -m "first commit"
 >>> 1 file changed, 1 insertion(+)
 >>> create mode 100644 README.md
 
-Adding Project Files
-We will use the DataCamp workspace MasterCard Stock Price with LSTM and GRU and download files. The author of the project has preprocessed the data and training time series data on the LSTM and GRU models. Learn more about the project by reading Recurrent Neural Network Tutorial (RNN).
-
-To save the model file, we have added a new code cell in the project's Jupyter notebook. The new script will create a new directory called “model” and save both LSTM and GRU models. 
-
-!mkdir -p model
-model_lstm.save('model/LSTM')
-model_gru.save('model/GRU')
-
 As we can see, the Git repository has a data folder containing CSV files, the model folder with the model’s weight and metadata. 
 
 Git Data Folder
 
 We will now stage all the files. You can add any directory, file, or data after the initial command. 
 
-git add .\data .\model LSTM_GRU.ipynb RNN.png
-
-OR
-
-If you want to add all files to the staging area, then use dot. 
-
-git add .
-
-Commit and Push
-We will commit all the changes with a simple message, and the output shows all the new files in create mode. 
-
-git commit -m "project files added"
-
->>> [main aa3e19a] project files added
->>>  10 files changed, 5020 insertions(+)
->>>  create mode 100644 LSTM_GRU.ipynb
->>>  create mode 100644 RNN.png
->>>  create mode 100644 data/Mastercard_stock_history.csv
->>>  create mode 100644 data/Mastercard_stock_info.csv
->>>  create mode 100644 model/GRU/saved_model.pb
->>>  create mode 100644 model/GRU/variables/variables.data-00000-of-00001
->>>  create mode 100644 model/GRU/variables/variables.index
->>>  create mode 100644 model/LSTM/saved_model.pb
->>>  create mode 100644 model/LSTM/variables/variables.data-00000-of-00001
-create mode 100644 model/LSTM/variables/variables.index
-
-Syncing with GitHub remote repository requires a remote name and branch name `git push <remote-name> <branch-name>`. If you have only one remote and one branch, then using `git push` will work.  
-
-After `git push`, the pop-up window will ask for the credentials, just add your GitHub username or password. You can also generate Personal access tokens and add them instead of the password. Learn more by reading the Git Push and Pull Tutorial.
-
-git push
-
->>> Enumerating objects: 21, done.
->>> Counting objects: 100% (21/21), done.
->>> Delta compression using up to 4 threads
->>> Compressing objects: 100% (19/19), done.
->>> Writing objects: 100% (21/21), 1.83 MiB | 1.59 MiB/s, done.
->>> Total 21 (delta 2), reused 0 (delta 0), pack-reused 0
->>> remote: Resolving deltas: 100% (2/2), done.
->>> To https://github.com/kingabzpro/DataCamp-Git.git
->>>  * [new branch]      main -> main
-
-We are going to check our GitHub repository kingabzpro/DataCamp-Git to see whether we have successfully pushed the changes to remote. The GitHub repository has all the files, data, and models.
-
-Remote push to GitHub
-Remote push to GitHub
-
-Git Branches
-It is recommended to work with branches: for example, if you want to work on project documentation, create a documentation branch using `git checkout` or `git branch`. Make changes in the README file and when you have finalized the changes, merge the branch with the base. 
-
-In our case, we have created and switched to a new branch called `readme`.
-
-git checkout -b readme
-
-Let’s edit the README file by adding a description to the project and link the RNN DataCamp workspace and tutorial. After that, we will stage changes and save a snapshot of changes with a message.
-
-git add README.md
-git commit -m "project description and links to blog"
-
->>> [readme f3b8b9b] project description and links to blog
->>>  1 file changed, 8 insertions(+)
-
-The remote repository doesn't have a readme branch. To create a new branch and push changes, we will use “readme:readme”. The output of the command shows that new branches have been created and both local and remote `readme` branches are synced. 
-
-
-git push origin readme:readme
-
-You can observe that we have successfully pushed the local branch to GitHub with a modified version of README.md file. 
-
-Readme branch on GitHub
-Readme branch on GitHub
-
-Pull Request
-This functionality is common for organizations. For example,  a software developer has worked on a new feature and wants to merge changes to the main remote branch. We will now create pull requests using GitHub GUI by clicking on the pull request button. After that, select the readme branch  which we want to merge with the base (main). You can type a detailed explanation of what features were added and click on the pull request button. 
-
-Pull request from readme to main branch
-Pull request from readme to main branch
-
-The maintainer of the repository will compare your changes and merge them when they have passed all the tests. In our case, you are the maintainer, so click on the merge request to blend changes with the main branch. 
-
-GitHub Merge Pull Request
-Merge pull request on GitHub
-
-Congratulations, we have successfully created a pull request and merged it with the main branch. You can view the changes on the main branch here. 
-
-If you want to view all the changes within your git repository, just type `git log`, and it will show historical changes to your project. Logging changes in data science projects are important, and Git helps us track all the changes, even large datasets. 
-
-History of Git Logs
-History of Git Logs
-
-Conclusion
-GitOps are crucial for data application development. They have become an essential skill for all types of IT jobs; even academic researchers are using them to share experimental code with a wider audience. On the other hand, GitHub plays a larger role in promoting open-source projects by providing a free software development ecosystem for all. 
-
 In this tutorial, we have learned about Git and GitHub and why they are important for data science projects. The tutorial also introduces you to basic Git commands and provides hands-on experience on how to track changes in data, model, and code. If you are interested in learning more about Git, then take an Introduction to Git course on DataCamp. You can also learn about the importance of GitHub certification and how it can help your career. 
-
 
 What is Git?
 An open-source distributed version control system. It allows developers to store, version, and visualize changes in a development project. It promotes flexible teamwork and optimized workflow. 
