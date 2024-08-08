@@ -1,0 +1,55 @@
+Here is a guide for installing Git on different operating systems and checking its version:
+
+Windows:
+Download the Installer:
+
+Go to the Git for Windows website.
+Download the installer for Windows.
+Run the Installer:
+
+Run the downloaded .exe file.
+Follow the installation wizard. The default settings are usually fine.
+Verify Installation:
+
+Open Command Prompt or PowerShell.
+
+Check the version with:
+
+
+git --version
+Linux:
+Install via Package Manager:
+
+For Debian/Ubuntu-based systems:
+
+sudo apt update
+sudo apt install git
+For Red Hat/CentOS-based systems:
+
+sudo yum install git
+For Fedora:
+
+sudo dnf install git
+For Arch Linux:
+
+sudo pacman -S git
+Verify Installation:
+
+git --version
+macOS:
+Install via Homebrew (Recommended):
+
+If you donot have Homebrew installed, install it first by following instructions at brew.sh.
+
+Then, install Git with:
+
+brew install git
+Install via Xcode Command Line Tools:
+
+Install the command line tools which include Git:
+
+xcode-select --install
+Verify Installation:
+
+git --version
+These commands and methods will help you install Git on your preferred operating system and check the version installed.
