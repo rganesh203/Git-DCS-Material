@@ -1,6 +1,6 @@
 Git is a distributed version control system (VCS) that enables multiple developers to collaborate on projects, tracking changes to files over time. Here's an overview of different types of version control systems (VCS), including Git:
 
-Local Version Control Systems:
+#Local Version Control Systems:
 
 These were the earliest VCS systems. They store versions of files on a local disk without needing a network connection. Example: RCS (Revision Control System).
 Centralized Version Control Systems (CVCS):
@@ -22,7 +22,7 @@ Remote: Git can synchronize changes between multiple repositories. A remote repo
 
 Pull Request: In platforms like GitHub, a pull request is a feature that allows requesting a review and merging of changes into another branch.
 
-Advantages of Git:
+#Advantages of Git:
 Speed: Git operations are generally fast due to its distributed nature.
 Branching and Merging: Efficient branching and merging capabilities make parallel development easier.
 Distributed Development: Facilitates collaboration among developers, even in distributed teams or offline environments.
