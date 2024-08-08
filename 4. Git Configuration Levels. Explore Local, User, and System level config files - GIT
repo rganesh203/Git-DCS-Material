@@ -1,0 +1,57 @@
+
+Git configuration settings can be set at different levels, each affecting various scopes of your Git environment. Here’s an overview of the three main levels:
+
+1. Local Configuration
+Scope: Specific to a single repository.
+File Location: .git/config inside the repository directory.
+Usage: Settings here override both user and system settings for the specific repository.
+Commands to view and edit:
+
+View local configuration:
+
+git config --local --list
+Edit local configuration:
+
+git config --local <key> <value>
+
+2. User Configuration
+Scope: Applies to all repositories for a specific user.
+File Location: ~/.gitconfig or ~/.config/git/config (depending on your OS and Git version).
+Usage: Settings here override system-wide settings but can be overridden by local settings for specific repositories.
+Commands to view and edit:
+
+View user configuration:
+
+git config --global --list
+Edit user configuration:
+
+git config --global <key> <value>
+3. System Configuration
+Scope: Applies to all users on the system and all repositories.
+File Location: /etc/gitconfig (or C:\ProgramData\Git\config on Windows).
+Usage: Settings here are applied system-wide and can be overridden by user and local settings.
+Commands to view and edit:
+
+View system configuration:
+
+git config --system --list
+Edit system configuration (requires administrative privileges):
+
+sudo git config --system <key> <value>
+Order of Precedence
+Local Configuration > User Configuration > System Configuration
+
+This means that if a setting is defined at the local level, it will take precedence over user and system-level settings. Similarly, user-level settings will override system-level settings.
+
+Examples
+Set your user name globally (user level):
+
+git config --global user.name "Your Name"
+Set your email for a specific repository (local level):
+
+git config --local user.email "your.email@example.com"
+Check your global username and email:
+
+git config --global user.name
+git config --global user.email
+Understanding these configuration levels helps in managing your Git settings effectively, especially when working on multiple repositories or collaborating in different environments.
